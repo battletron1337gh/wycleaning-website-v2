@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over Ons - WY Cleaning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="nav scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><span class="logo-wy">WY</span><span class="logo-text">Cleaning</span></a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Producten</a>
+                <a href="about.html" class="nav-link active">Over ons</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="cart-toggle" id="cartToggle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 2L6 7H3L5.5 20H18.5L21 7H18L15 2H9Z"/><path d="M9 11V17M15 11V17"/></svg><span class="cart-badge" id="cartBadge">0</span></button>
+                <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-backdrop" id="mobileBackdrop"></div>
+        <div class="mobile-menu-panel">
+            <div class="mobile-menu-header">
+                <a href="index.html" class="nav-logo"><span class="logo-wy">WY</span><span class="logo-text">Cleaning</span></a>
+                <button class="menu-close" id="menuClose"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6L18 18"/></svg></button>
+            </div>
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="shop.html" class="mobile-nav-link">Producten</a>
+                <a href="about.html" class="mobile-nav-link active">Over ons</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header"><h3>Winkelwagen</h3><button class="cart-close" id="cartClose"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6L18 18"/></svg></button></div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="cart-total"><span>Totaal</span><span class="cart-total-price" id="cartTotal">€0,00</span></div>
+            <button class="btn btn-primary btn-full">Afrekenen</button>
+        </div>
+    </aside>
+
+    <section style="padding-top:120px;padding-bottom:4rem;background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%)">
+        <div class="container" style="text-align:center;color:white">
+            <span style="display:inline-block;padding:0.375rem 1rem;background:rgba(14,165,233,0.2);color:#38bdf8;font-size:0.75rem;font-weight:700;text-transform:uppercase;border-radius:50px;margin-bottom:1rem">Ons Verhaal</span>
+            <h1 style="font-size:clamp(2rem,5vw,3rem);font-weight:800;margin-bottom:1rem">Over WY Cleaning</h1>
+            <p style="color:rgba(255,255,255,0.7);max-width:600px;margin:0 auto;font-size:1.125rem">Passie voor schone auto's sinds 2020</p>
+        </div>
+    </section>
+
+    <section class="section section-white">
+        <div class="container">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center">
+                <div>
+                    <span class="section-label" style="margin-bottom:1rem">Onze Missie</span>
+                    <h2 class="section-title" style="text-align:left">Professionele kwaliteit voor iedereen</h2>
+                    <p style="color:var(--color-text-secondary);margin-bottom:1.5rem;line-height:1.8">WY Cleaning Products is ontstaan uit een passie voor auto's en het streven naar perfectie. We merkten dat professionele detailing producten vaak ingewikkeld en duur waren.</p>
+                    <p style="color:var(--color-text-secondary);margin-bottom:1.5rem;line-height:1.8">Daarom ontwikkelden wij een lijn van kant-en-klare producten die professionele resultaten bieden, maar eenvoudig in gebruik zijn.</p>
+                    <div style="display:flex;flex-direction:column;gap:1rem">
+                        <div style="display:flex;align-items:center;gap:0.75rem"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2"><path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999"/><path d="M22 4L12 14.01L9 11.01"/></svg><span style="font-weight:600">100% Nederlandse ontwikkeling</span></div>
+                        <div style="display:flex;align-items:center;gap:0.75rem"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2"><path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999"/><path d="M22 4L12 14.01L9 11.01"/></svg><span style="font-weight:600">Milieuvriendelijke formules</span></div>
+                        <div style="display:flex;align-items:center;gap:0.75rem"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2"><path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999"/><path d="M22 4L12 14.01L9 11.01"/></svg><span style="font-weight:600">Getest door professionals</span></div>
+                    </div>
+                </div>
+                <div style="background:linear-gradient(135deg,#0ea5e9 0%,#8b5cf6 100%);border-radius:var(--radius-lg);padding:3rem;text-align:center;color:white">
+                    <div style="font-size:8rem;margin-bottom:1rem">🚗✨</div>
+                    <h3 style="font-size:1.5rem;margin-bottom:0.5rem">WY Cleaning</h3>
+                    <p style="opacity:0.9">Premium Car Care</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-gray">
+        <div class="container">
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center">
+                <div style="background:white;padding:2rem;border-radius:var(--radius-lg);box-shadow:var(--shadow-sm)">
+                    <div style="font-size:3rem;font-weight:800;background:linear-gradient(135deg,#0ea5e9 0%,#8b5cf6 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent">500+</div>
+                    <p style="color:var(--color-text-secondary)">Tevreden klanten</p>
+                </div>
+                <div style="background:white;padding:2rem;border-radius:var(--radius-lg);box-shadow:var(--shadow-sm)">
+                    <div style="font-size:3rem;font-weight:800;background:linear-gradient(135deg,#0ea5e9 0%,#8b5cf6 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent">6</div>
+                    <p style="color:var(--color-text-secondary)">Premium producten</p>
+                </div>
+                <div style="background:white;padding:2rem;border-radius:var(--radius-lg);box-shadow:var(--shadow-sm)">
+                    <div style="font-size:3rem;font-weight:800;background:linear-gradient(135deg,#0ea5e9 0%,#8b5cf6 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent">4.9</div>
+                    <p style="color:var(--color-text-secondary)">Gemiddelde beoordeling</p>
+                </div>
+                <div style="background:white;padding:2rem;border-radius:var(--radius-lg);box-shadow:var(--shadow-sm)">
+                    <div style="font-size:3rem;font-weight:800;background:linear-gradient(135deg,#0ea5e9 0%,#8b5cf6 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent">100%</div>
+                    <p style="color:var(--color-text-secondary)">Nederlands</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-dark">
+        <div class="container">
+            <div class="cta-content">
+                <span class="section-label light">Klaar om te beginnen?</span>
+                <h2 class="cta-title">Ontdek onze producten</h2>
+                <p class="cta-text">Ervaar het verschil met WY Cleaning producten.</p>
+                <a href="shop.html" class="btn btn-white btn-lg">Shop nu</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><a href="index.html" class="nav-logo"><span class="logo-wy">WY</span><span class="logo-text">Cleaning</span></a><p class="footer-text">Premium auto verzorgingsproducten voor de ware liefhebber.</p></div>
+                <div class="footer-links"><h4>Pagina's</h4><nav><a href="index.html">Home</a><a href="shop.html">Producten</a><a href="about.html">Over ons</a><a href="contact.html">Contact</a></nav></div>
+                <div class="footer-links"><h4>Service</h4><nav><a href="#">Verzending</a><a href="#">Retouren</a><a href="#">FAQ</a></nav></div>
+                <div class="footer-contact"><h4>Contact</h4><div class="contact-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"/><path d="M22 6L12 13L2 6"/></svg><span>info@wycleaning.nl</span></div></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 WY Cleaning Products. Alle rechten voorbehouden.</p></div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

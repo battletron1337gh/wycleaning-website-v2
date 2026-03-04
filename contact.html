@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - WY Cleaning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="nav scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><span class="logo-wy">WY</span><span class="logo-text">Cleaning</span></a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Producten</a>
+                <a href="about.html" class="nav-link">Over ons</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="cart-toggle" id="cartToggle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 2L6 7H3L5.5 20H18.5L21 7H18L15 2H9Z"/><path d="M9 11V17M15 11V17"/></svg><span class="cart-badge" id="cartBadge">0</span></button>
+                <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-backdrop" id="mobileBackdrop"></div>
+        <div class="mobile-menu-panel">
+            <div class="mobile-menu-header">
+                <a href="index.html" class="nav-logo"><span class="logo-wy">WY</span><span class="logo-text">Cleaning</span></a>
+                <button class="menu-close" id="menuClose"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6L18 18"/></svg></button>
+            </div>
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="shop.html" class="mobile-nav-link">Producten</a>
+                <a href="about.html" class="mobile-nav-link">Over ons</a>
+                <a href="contact.html" class="mobile-nav-link active">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header"><h3>Winkelwagen</h3><button class="cart-close" id="cartClose"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6L18 18"/></svg></button></div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="cart-total"><span>Totaal</span><span class="cart-total-price" id="cartTotal">€0,00</span></div>
+            <button class="btn btn-primary btn-full">Afrekenen</button>
+        </div>
+    </aside>
+
+    <section style="padding-top:120px;padding-bottom:4rem;background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%)">
+        <div class="container" style="text-align:center;color:white">
+            <span style="display:inline-block;padding:0.375rem 1rem;background:rgba(14,165,233,0.2);color:#38bdf8;font-size:0.75rem;font-weight:700;text-transform:uppercase;border-radius:50px;margin-bottom:1rem">Neem Contact Op</span>
+            <h1 style="font-size:clamp(2rem,5vw,3rem);font-weight:800;margin-bottom:1rem">Contact</h1>
+            <p style="color:rgba(255,255,255,0.7);max-width:600px;margin:0 auto;font-size:1.125rem">Heb je vragen? We helpen je graag!</p>
+        </div>
+    </section>
+
+    <section class="section section-white">
+        <div class="container">
+            <div class="contact-grid">
+                <div>
+                    <span class="section-label" style="margin-bottom:1rem">Contactgegevens</span>
+                    <h2 class="section-title" style="text-align:left">We staan voor je klaar</h2>
+                    <p style="color:var(--color-text-secondary);margin-bottom:2rem">Heb je vragen over onze producten of je bestelling? Neem gerust contact met ons op.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"/><path d="M22 6L12 13L2 6"/></svg>
+                            <div><h4>Email</h4><p>info@wycleaning.nl</p></div>
+                        </div>
+                        <div class="contact-method">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92V19C21.9983 19.4695 21.8737 19.9303 21.6379 20.3371C21.4021 20.7438 21.0632 21.0825 20.6463 21.3209C20.2294 21.5593 19.749 21.6893 19.2597 21.6989C18.7704 21.7084 18.2889 21.5971 17.86 21.375L15.65 20.175C15.3396 20.0142 14.9823 19.9665 14.6383 20.0396C14.2943 20.1127 13.9857 20.302 13.765 20.575L11.505 23.445C11.362 23.6337 11.1792 23.7871 10.9704 23.8935C10.7616 23.9999 10.5323 24.0565 10.2995 24.059C10.0668 24.0615 9.83634 24.0099 9.62524 23.908C9.41415 23.8061 9.22789 23.6566 9.0805 23.471L6.6205 20.371C6.39608 20.0901 6.09312 19.8847 5.7515 19.781L2.8915 18.931C2.41042 18.7864 1.99173 18.4791 1.70568 18.0589C1.41963 17.6388 1.28228 17.1297 1.31596 16.6171C1.34963 16.1045 1.55226 15.6179 1.8915 15.241L4.6915 12.041C4.92348 11.7748 5.05908 11.438 5.0775 11.085L5.4075 4.925C5.42732 4.5374 5.54434 4.16054 5.74787 3.82939C5.9514 3.49824 6.23483 3.2233 6.5715 3.031L9.4315 1.371C9.75575 1.18519 10.123 1.09253 10.4945 1.10346C10.866 1.11439 11.2269 1.22844 11.5385 1.433L14.8685 3.613C15.1545 3.79922 15.4876 3.90309 15.8293 3.91336C16.1709 3.92363 16.5075 3.84001 16.7985 3.671L20.0885 1.751C20.5216 1.50061 21.0294 1.40997 21.5224 1.4943C22.0155 1.57863 22.4627 1.83304 22.7864 2.21394C23.11 2.59483 23.2901 3.07903 23.295 3.581L23.405 15.581C23.4084 15.9378 23.3234 16.2901 23.1574 16.6066C22.9913 16.9231 22.7489 17.1941 22.4525 17.405L22 17.73"/></svg>
+                            <div><h4>WhatsApp</h4><p>+31 6 12345678</p></div>
+                        </div>
+                        <div class="contact-method">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6V12L16 16"/></svg>
+                            <div><h4>Openingstijden</h4><p>Ma-Vr: 09:00 - 17:00</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <h3>Stuur een bericht</h3>
+                    <form id="contactForm">
+                        <div class="form-group"><label>Naam</label><input type="text" placeholder="Je naam" required></div>
+                        <div class="form-group"><label>Email</label><input type="email" placeholder="je@email.nl" required></div>
+                        <div class="form-group"><label>Onderwerp</label><select><option>Vraag over product</option><option>Bestelling</option><option>Retour</option><option>Anders</option></select></div>
+                        <div class="form-group"><label>Bericht</label><textarea placeholder="Je bericht..." rows="4" required></textarea></div>
+                        <button type="submit" class="btn btn-primary btn-full">Verstuur bericht</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-gray">
+        <div class="container">
+            <div class="section-header"><span class="section-label">Veelgestelde Vragen</span><h2 class="section-title">FAQ</h2></div>
+            <div style="max-width:800px;margin:0 auto">
+                <div class="faq-item"><h4><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17H12.01"/></svg>Hoe gebruik ik Wash & Shine?</h4><p style="color:var(--color-text-secondary);font-size:0.9rem">Spray het product op je auto vanaf 30-40cm afstand, laat 2 minuten inwerken en spoel af met hoge druk. Geen borstel nodig!</p></div>
+                <div class="faq-item"><h4><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17H12.01"/></svg>Is er gratis verzending?</h4><p style="color:var(--color-text-secondary);font-size:0.9rem">Ja! Vanaf €50 is de verzending binnen Nederland gratis. Onder de €50 betaal je €4,95 verzendkosten.</p></div>
+                <div class="faq-item"><h4><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17H12.01"/></svg>Kan ik retourneren?</h4><p style="color:var(--color-text-secondary);font-size:0.9rem">Ja, je hebt 30 dagen retourrecht op ongebruikte producten. Neem contact op voor een retourlabel.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><a href="index.html" class="nav-logo"><span class="logo-wy">WY</span><span class="logo-text">Cleaning</span></a><p class="footer-text">Premium auto verzorgingsproducten voor de ware liefhebber.</p></div>
+                <div class="footer-links"><h4>Pagina's</h4><nav><a href="index.html">Home</a><a href="shop.html">Producten</a><a href="about.html">Over ons</a><a href="contact.html">Contact</a></nav></div>
+                <div class="footer-links"><h4>Service</h4><nav><a href="#">Verzending</a><a href="#">Retouren</a><a href="#">FAQ</a></nav></div>
+                <div class="footer-contact"><h4>Contact</h4><div class="contact-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"/><path d="M22 6L12 13L2 6"/></svg><span>info@wycleaning.nl</span></div></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 WY Cleaning Products. Alle rechten voorbehouden.</p></div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

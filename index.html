@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WY Cleaning Products - Premium auto reinigingsproducten voor professionele detailing resultaten.">
+    <title>WY Cleaning | Premium Auto Detailing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-wy">WY</span>
+                <span class="logo-text">Cleaning</span>
+            </a>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="shop.html" class="nav-link">Producten</a>
+                <a href="about.html" class="nav-link">Over ons</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="cart-toggle" id="cartToggle" aria-label="Winkelwagen">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 2L6 7H3L5.5 20H18.5L21 7H18L15 2H9Z"/>
+                        <path d="M9 11V17M15 11V17"/>
+                    </svg>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </button>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-backdrop" id="mobileBackdrop"></div>
+        <div class="mobile-menu-panel">
+            <div class="mobile-menu-header">
+                <a href="index.html" class="nav-logo">
+                    <span class="logo-wy">WY</span>
+                    <span class="logo-text">Cleaning</span>
+                </a>
+                <button class="menu-close" id="menuClose" aria-label="Sluit menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6L6 18M6 6L18 18"/>
+                    </svg>
+                </button>
+            </div>
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link active">Home</a>
+                <a href="shop.html" class="mobile-nav-link">Producten</a>
+                <a href="about.html" class="mobile-nav-link">Over ons</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </nav>
+            <div class="mobile-menu-footer">
+                <a href="shop.html" class="btn btn-primary btn-full">Bekijk producten</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Winkelwagen</h3>
+            <button class="cart-close" id="cartClose" aria-label="Sluit winkelwagen">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6L18 18"/>
+                </svg>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items loaded via JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Totaal</span>
+                <span class="cart-total-price" id="cartTotal">€0,00</span>
+            </div>
+            <button class="btn btn-primary btn-full">Afrekenen</button>
+            <button class="btn btn-ghost btn-full" id="continueShopping">Verder winkelen</button>
+        </div>
+    </aside>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge fade-in">
+                <span class="badge-icon">✨</span>
+                <span>Nederlandse kwaliteit</span>
+            </div>
+            <h1 class="hero-title fade-in delay-1">
+                Professionele car care<br>
+                <span class="text-gradient">voor iedereen</span>
+            </h1>
+            <p class="hero-subtitle fade-in delay-2">
+                Premium auto reinigingsproducten die professionele resultaten bieden, 
+                eenvoudig thuis te gebruiken. Kant-en-klaar, geen gedoe.
+            </p>
+            <div class="hero-actions fade-in delay-3">
+                <a href="shop.html" class="btn btn-primary btn-lg">
+                    Bekijk producten
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19"/>
+                    </svg>
+                </a>
+                <a href="about.html" class="btn btn-secondary btn-lg">Over WY Cleaning</a>
+            </div>
+            <div class="hero-trust fade-in delay-4">
+                <div class="trust-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999"/>
+                        <path d="M22 4L12 14.01L9 11.01"/>
+                    </svg>
+                    <span>Gratis verzending vanaf €50</span>
+                </div>
+                <div class="trust-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+                        <path d="M12 6V12L16 14"/>
+                    </svg>
+                    <span>Binnen 1-2 werkdagen geleverd</span>
+                </div>
+                <div class="trust-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z"/>
+                        <path d="M14 2V8H20"/>
+                        <path d="M16 13H8M16 17H8M10 9H8"/>
+                    </svg>
+                    <span>30 dagen retourrecht</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-product">
+                <span class="product-emoji">🚗</span>
+                <span class="product-label">Bestseller</span>
+                <span class="product-name">Wash & Shine</span>
+                <span class="product-price">€24,99</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- USP Section -->
+    <section class="section section-white">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Waarom WY Cleaning</span>
+                <h2 class="section-title">De beste keuze voor jouw auto</h2>
+            </div>
+            <div class="usp-grid">
+                <div class="usp-card scroll-reveal">
+                    <div class="usp-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                        </svg>
+                    </div>
+                    <h3>Premium kwaliteit</h3>
+                    <p>Professionele producten voor thuisgebruik, ontwikkeld in Nederland</p>
+                </div>
+                <div class="usp-card scroll-reveal">
+                    <div class="usp-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+                            <path d="M12 6V12L16 16"/>
+                        </svg>
+                    </div>
+                    <h3>Kant-en-klaar</h3>
+                    <p>Geen verdunnen nodig, direct gebruiksklaar voor snelle resultaten</p>
+                </div>
+                <div class="usp-card scroll-reveal">
+                    <div class="usp-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8C21 6.89543 20.1046 6 19 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18H19C20.1046 18 21 17.1046 21 16Z"/>
+                            <path d="M3 8L12 13L21 8"/>
+                        </svg>
+                    </div>
+                    <h3>Snelle levering</h3>
+                    <p>Binnen 1-2 werkdagen in huis, gratis verzending vanaf €50</p>
+                </div>
+                <div class="usp-card scroll-reveal">
+                    <div class="usp-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92V19C21.9983 19.4695 21.8737 19.9303 21.6379 20.3371C21.4021 20.7438 21.0632 21.0825 20.6463 21.3209C20.2294 21.5593 19.749 21.6893 19.2597 21.6989C18.7704 21.7084 18.2889 21.5971 17.86 21.375L15.65 20.175C15.3396 20.0142 14.9823 19.9665 14.6383 20.0396C14.2943 20.1127 13.9857 20.302 13.765 20.575L11.505 23.445C11.362 23.6337 11.1792 23.7871 10.9704 23.8935C10.7616 23.9999 10.5323 24.0565 10.2995 24.059C10.0668 24.0615 9.83634 24.0099 9.62524 23.908C9.41415 23.8061 9.22789 23.6566 9.0805 23.471L6.6205 20.371C6.39608 20.0901 6.09312 19.8847 5.7515 19.781L2.8915 18.931C2.41042 18.7864 1.99173 18.4791 1.70568 18.0589C1.41963 17.6388 1.28228 17.1297 1.31596 16.6171C1.34963 16.1045 1.55226 15.6179 1.8915 15.241L4.6915 12.041C4.92348 11.7748 5.05908 11.438 5.0775 11.085L5.4075 4.925C5.42732 4.5374 5.54434 4.16054 5.74787 3.82939C5.9514 3.49824 6.23483 3.2233 6.5715 3.031L9.4315 1.371C9.75575 1.18519 10.123 1.09253 10.4945 1.10346C10.866 1.11439 11.2269 1.22844 11.5385 1.433L14.8685 3.613C15.1545 3.79922 15.4876 3.90309 15.8293 3.91336C16.1709 3.92363 16.5075 3.84001 16.7985 3.671L20.0885 1.751C20.5216 1.50061 21.0294 1.40997 21.5224 1.4943C22.0155 1.57863 22.4627 1.83304 22.7864 2.21394C23.11 2.59483 23.2901 3.07903 23.295 3.581L23.405 15.581C23.4084 15.9378 23.3234 16.2901 23.1574 16.6066C22.9913 16.9231 22.7489 17.1941 22.4525 17.405L22 17.73"/>
+                        </svg>
+                    </div>
+                    <h3>Milieuvriendelijk</h3>
+                    <p>Biologisch afbreekbare formules die veilig zijn voor het milieu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Onze collectie</span>
+                <h2 class="section-title">Populaire producten</h2>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products loaded via JS -->
+            </div>
+            <div class="section-footer">
+                <a href="shop.html" class="btn btn-outline">
+                    Bekijk alle producten
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="cta-content">
+                <span class="section-label light">Klaar om te beginnen?</span>
+                <h2 class="cta-title">Geef je auto de verzorging<br>die hij verdient</h2>
+                <p class="cta-text">Ontdek onze complete lijn van premium auto verzorgingsproducten en zie het verschil.</p>
+                <a href="shop.html" class="btn btn-white btn-lg">
+                    Shop nu
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <span class="logo-wy">WY</span>
+                        <span class="logo-text">Cleaning</span>
+                    </a>
+                    <p class="footer-text">Premium auto verzorgingsproducten voor de ware liefhebber. Professionele resultaten, eenvoudig thuis.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <path d="M16 11.37C16.2427 11.7013 16.3849 12.1041 16.4074 12.5228C16.4299 12.9416 16.3319 13.3575 16.1259 13.7139C15.9198 14.0703 15.6151 14.3504 15.252 14.5175C14.8889 14.6846 14.4847 14.731 14.0917 14.6505C13.6987 14.57 13.3352 14.3661 13.0516 14.0655C12.768 13.7649 12.5777 13.3816 12.5053 12.9676C12.433 12.5537 12.4817 12.1287 12.6454 11.7433C12.8092 11.3579 13.0804 11.0297 13.423 10.8"/>
+                                <path d="M17.5 6.5H17.51"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22.54 6.42C22.4212 5.94541 22.1793 5.51057 21.8387 5.15941C21.498 4.80824 21.0708 4.55318 20.6 4.42C18.88 3.91 12 3.91 12 3.91C12 3.91 5.12 3.91 3.4 4.42C2.92915 4.55318 2.50202 4.80824 2.16137 5.15941C1.82073 5.51057 1.57879 5.94541 1.46 6.42C0.95 8.14 0.95 12 0.95 12C0.95 12 0.95 15.86 1.46 17.58C1.57879 18.0546 1.82073 18.4894 2.16137 18.8406C2.50202 19.1918 2.92915 19.4468 3.4 19.58C5.12 20.09 12 20.09 12 20.09C12 20.09 18.88 20.09 20.6 19.58C21.0708 19.4468 21.498 19.1918 21.8387 18.8406C22.1793 18.4894 22.4212 18.0546 22.54 17.58C23.05 15.86 23.05 12 23.05 12C23.05 12 23.05 8.14 22.54 6.42Z"/>
+                                <path d="M9.75 15.02L15.5 11.75L9.75 8.48V15.02Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Pagina's</h4>
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="shop.html">Producten</a>
+                        <a href="about.html">Over ons</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
+                <div class="footer-links">
+                    <h4>Service</h4>
+                    <nav>
+                        <a href="#">Verzending</a>
+                        <a href="#">Retouren</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Garantie</a>
+                    </nav>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <div class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"/>
+                            <path d="M22 6L12 13L2 6"/>
+                        </svg>
+                        <span>info@wycleaning.nl</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10C21 17 12 22 12 22C12 22 3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10Z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Nederland</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 WY Cleaning Products. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
